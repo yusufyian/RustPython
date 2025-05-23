@@ -11,7 +11,8 @@ wasm-pack.log
 .idea/
 .envrc
 .python-version
-
+.DS_Store
+Cargo.lock
 flame-graph.html
 flame.txt
 flamescope.json
