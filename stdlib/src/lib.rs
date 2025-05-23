@@ -38,7 +38,6 @@ mod math;
 mod mmap;
 mod pyexpat;
 mod pystruct;
-mod random;
 mod statistics;
 mod suggestions;
 // TODO: maybe make this an extension module, if we ever get those
@@ -133,7 +132,6 @@ pub fn get_module_inits() -> impl Iterator<Item = (Cow<'static, str>, StdlibInit
             "_json" => json::make_module,
             "math" => math::make_module,
             "pyexpat" => pyexpat::make_module,
-            "_random" => random::make_module,
             "_statistics" => statistics::make_module,
             "_struct" => pystruct::make_module,
             "unicodedata" => unicodedata::make_module,
